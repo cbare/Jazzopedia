@@ -116,6 +116,7 @@ class JazzDiscoSpider(scrapy.Spider):
                     elem = sibling.next_sibling
                     while elem is not None:
                         personnel, elem = collect_text(elem)
+                        personnel = clean_personnel(personnel)
                         if elem.name == 'div' and 'date' in elem['class']:
                             date,_ = collect_text(elem.next)
                         else:
@@ -136,7 +137,7 @@ class JazzDiscoSpider(scrapy.Spider):
                         if look_ahead is None or look_ahead.name in ['h3','h2']:
                             break
 
-                    yield Release(title=title, catalog_slug=catalog_slug, catalog_number=catalog_number, year=year, notes=notes, parts=parts)
+                    yield Release(title=title, artist=artist, catalog_slug=catalog_slug, catalog_number=catalog_number, year=year, notes=notes, parts=parts)
 
 
     def parse_sessions(self, response):
@@ -165,6 +166,7 @@ class JazzDiscoSpider(scrapy.Spider):
                     elem = sibling.next_sibling
                     while elem is not None:
                         personnel, elem = collect_text(elem)
+                        personnel = clean_personnel(personnel)
                         if elem.name == 'div' and 'date' in elem['class']:
                             date,_ = collect_text(elem.next)
                         else:
@@ -190,7 +192,7 @@ class JazzDiscoSpider(scrapy.Spider):
                         if look_ahead is None or look_ahead.name in ['h3','h2']:
                             break
 
-                    yield Session(title=title, id=session_id, year=year, notes=notes, parts=parts)
+                    yield Session(group=title, session_id=session_id, year=year, notes=notes, parts=parts)
 
 
 

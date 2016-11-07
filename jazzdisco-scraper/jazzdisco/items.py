@@ -22,6 +22,7 @@ class Part(scrapy.Item):
 
 class Release(scrapy.Item):
     title = scrapy.Field()
+    artist = scrapy.Field()
     catalog_slug = scrapy.Field()
     catalog_number = scrapy.Field()
     year = scrapy.Field()
@@ -29,8 +30,8 @@ class Release(scrapy.Item):
     parts = scrapy.Field()
 
 class Session(scrapy.Item):
-    id = scrapy.Field()
-    title = scrapy.Field()
+    session_id = scrapy.Field()
+    group = scrapy.Field()
     year = scrapy.Field()
     notes = scrapy.Field()
     parts = scrapy.Field()

@@ -1,4 +1,4 @@
-from jazzdisco.utils import process_personnel
+from jazzdisco.utils import process_personnel, clean_personnel
 
 
 personnel_lines = """\
@@ -44,4 +44,15 @@ def test_personnel():
     assert ('Alan Rubin', 'trumpet') in results
     assert ('Alan Rubin', 'flugelhorn') in results
     assert ('Joe Farrell', 'piccolo') in results
+
+def test_same_personnel():
+    example = "<span class=\"same\">Duke Pearson (piano) Gene Taylor (bass) Lex Humphries (drums): </span>same personnel"
+    assert clean_personnel(example) == "Duke Pearson (piano) Gene Taylor (bass) Lex Humphries (drums)"
+
+    example = '<span class="same">Gail Brockman, Dizzy Gillespie, Marion Hazel, Shorty McConnell (trumpet) Joe Taswell Baird, Chippy Outcalt, Howard Scott (trombone) Gerald "Gerry" Valentine (trombone, arranger) Bill Frazier, John Jackson (alto sax) Gene Ammons, Dexter Gordon (tenor sax) Leo Parker (baritone sax) John Malachi (piano, arranger) Connie Wainwright (guitar) Tommy Potter (bass) Art Blakey (drums) Sarah Vaughan (vocals) Billy Eckstine (vocals, valve trombone, conductor) Tadd Dameron (arranger): </span>same session'
+    assert clean_personnel(example) == "Gail Brockman, Dizzy Gillespie, Marion Hazel, Shorty McConnell (trumpet) Joe Taswell Baird, Chippy Outcalt, Howard Scott (trombone) Gerald \"Gerry\" Valentine (trombone, arranger) Bill Frazier, John Jackson (alto sax) Gene Ammons, Dexter Gordon (tenor sax) Leo Parker (baritone sax) John Malachi (piano, arranger) Connie Wainwright (guitar) Tommy Potter (bass) Art Blakey (drums) Sarah Vaughan (vocals) Billy Eckstine (vocals, valve trombone, conductor) Tadd Dameron (arranger)"
+
+    example = '<span class="same">Eric Dolphy (alto sax, flute) Nathan Gershman (cello) John Pisano (guitar) Hal Gaylor (bass) Chico Hamilton (drums): </span>same session'
+    assert clean_personnel(example) == "Eric Dolphy (alto sax, flute) Nathan Gershman (cello) John Pisano (guitar) Hal Gaylor (bass) Chico Hamilton (drums)"
+
 

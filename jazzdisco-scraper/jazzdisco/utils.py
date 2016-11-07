@@ -101,4 +101,10 @@ def process_personnel(line):
                 yield name, instrument
 
 
+def clean_personnel(line):
+    m = re.match(r'\s*<span class="same">(.+?):\s</span>same\s(?:personnel|session)\s*', line)
+    if m:
+        return m.group(1)
+    else:
+        return line
 
