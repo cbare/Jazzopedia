@@ -4,6 +4,7 @@ import scrapy
 class Musician(scrapy.Item):
     name = scrapy.Field()
     full_name = scrapy.Field()
+    slug = scrapy.Field()
     birth_date = scrapy.Field()
     birth_place = scrapy.Field()
     death_date = scrapy.Field()
@@ -23,6 +24,7 @@ class Part(scrapy.Item):
 class Release(scrapy.Item):
     title = scrapy.Field()
     artist = scrapy.Field()
+    catalog_source = scrapy.Field()
     catalog_slug = scrapy.Field()
     catalog_number = scrapy.Field()
     year = scrapy.Field()
@@ -31,6 +33,7 @@ class Release(scrapy.Item):
 
 class Session(scrapy.Item):
     session_id = scrapy.Field()
+    catalog_source = scrapy.Field()
     group = scrapy.Field()
     year = scrapy.Field()
     notes = scrapy.Field()

@@ -12,7 +12,7 @@ def consume_whitespace(elem):
     """
     while type(elem)==bs4.element.NavigableString and elem.string.strip() == '':
         elem = elem.next_sibling
-    return child
+    return elem
 
 
 def collect_text(elem):
@@ -87,18 +87,26 @@ def process_title(line):
     else:
         raise RuntimeError("Unable to parse title line.", line)
 
+def remove_track_references(s):
+    return re.sub(r'\s+-\d+((,\d+)|(/\d+))*$', '', s)
 
 def process_personnel(line):
     """
     Split personnel line into pairs of name, intrument
     """
+    line = re.sub(r'<span class="same">', '', line)
+    line = re.sub(r'</span>', '', line)
+    line = re.sub(r'plus overdubs: ', '', line)
+    line = re.sub(r'plus an overdub: ', '', line)
+    line = re.sub(r'with ', '', line)
+    line = re.sub(r'^[:.] (add )?', '', line)
     match_iter = re.finditer(r'\s*(?:([^()]+?) \(([^()]+?)\))', line)
     for m in match_iter:
         names = re.split(",\s*", m.group(1))
         instruments = re.split(",\s+", m.group(2))
         for name in names:
             for instrument in instruments:
-                yield name, instrument
+                yield name, remove_track_references(instrument)
 
 
 def clean_personnel(line):

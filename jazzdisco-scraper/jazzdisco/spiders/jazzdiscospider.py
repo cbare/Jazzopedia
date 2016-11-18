@@ -64,9 +64,8 @@ class JazzDiscoSpider(scrapy.Spider):
 
     def parse_musician(self, response):
         h = response.xpath("//h2[text()=\"Collector's Guides & Discographies\"]")
-        ps = h.xpath("following-sibling::p[1]").extract()
-        for p in ps:
-            yield Musician(process_musician_line(p))
+        line = h.xpath("following-sibling::p[1]").extract()[0]
+        fields = process_musician_line(line)
 
         ## get album catalog link
         catalog_link = response.xpath("//a[text()='Catalog']/@href").extract()
@@ -79,7 +78,9 @@ class JazzDiscoSpider(scrapy.Spider):
         ## add to set of processed musicians
         url = response.xpath("/html/head/base/@href").extract()[0]
         ## for example: 'http://www.jazzdisco.org/sonny-clark/'
-        self.processed_musicians.add(url[25:-1])
+        slug = url[25:-1]
+        self.processed_musicians.add(slug)
+        yield Musician(fields+[('slug',slug)])
 
         ## queue up related musicians
         container = response.xpath("//div[@id='sidebar']/div[@id='sidebar-see-also']/div[@class='a-to-z-container']")
@@ -95,7 +96,7 @@ class JazzDiscoSpider(scrapy.Spider):
 
         h1 = soup.find(name='h1')
         if h1:
-            artist = ''.join(h1.strings).replace(' Catalog', '')
+            catalog_artist = ''.join(h1.strings).replace(' Catalog', '')
 
         catalog_data = soup.find(id='catalog-data')
         for year_header in catalog_data.find_all('h2'):
@@ -122,22 +123,25 @@ class JazzDiscoSpider(scrapy.Spider):
                         else:
                             raise RuntimeError('Missing date for title: %s'%title)
                         tracks = []
-                        table = elem.find_next('table')
-                        for row in table.find_all('tr'):
-                            cells = row.find_all('td')
-                            track_id = cells[0].string
-                            track_name = cells[1].string
-                            track_id = track_id.strip() if track_id else track_id
-                            track_name = track_name.strip() if track_name else track_name
-                            tracks.append(Track(id=track_id, name=track_name))
-                        parts.append(Part(personnel=personnel, date=date, tracks=tracks))
-                        elem = table.next_sibling
+                        elem = consume_whitespace(elem.next_sibling)
+                        if elem.name == 'table':
+                            for row in elem.find_all('tr'):
+                                cells = row.find_all('td')
+                                track_id = cells[0].string
+                                track_name = cells[1].string
+                                track_id = track_id.strip() if track_id else track_id
+                                track_name = track_name.strip() if track_name else track_name
+                                tracks.append(Track(id=track_id, name=track_name))
+                            parts.append(Part(personnel=personnel, date=date, tracks=tracks))
+                            elem = elem.next_sibling
+                        else:
+                            raise RuntimeError("Expected a table of tracks")
 
                         notes, look_ahead = collect_text(elem)
                         if look_ahead is None or look_ahead.name in ['h3','h2']:
                             break
 
-                    yield Release(title=title, artist=artist, catalog_slug=catalog_slug, catalog_number=catalog_number, year=year, notes=notes, parts=parts)
+                    yield Release(title=title, artist=artist, catalog_source=catalog_artist, catalog_slug=catalog_slug, catalog_number=catalog_number, year=year, notes=notes, parts=parts)
 
 
     def parse_sessions(self, response):
@@ -172,18 +176,21 @@ class JazzDiscoSpider(scrapy.Spider):
                         else:
                             raise RuntimeError('Missing date for title: %s'%title)
                         tracks = []
-                        table = elem.find_next('table')
-                        for row in table.find_all('tr'):
-                            cells = row.find_all('td')
-                            track_id = cells[0].string
-                            track_name = cells[1].string
-                            catalog_id = cells[2].string
-                            track_id = track_id.strip() if track_id else track_id
-                            track_name = track_name.strip() if track_name else track_name
-                            catalog_id = catalog_id.strip() if catalog_id else catalog_id
-                            tracks.append(Track(id=track_id, name=track_name, issued=catalog_id))
-                        parts.append(Part(personnel=personnel, date=date, tracks=tracks))
-                        elem = table.next_sibling
+                        elem = consume_whitespace(elem.next_sibling)
+                        if elem.name == 'table':
+                            for row in elem.find_all('tr'):
+                                cells = row.find_all('td')
+                                track_id = cells[0].string
+                                track_name = cells[1].string
+                                catalog_id = cells[2].string
+                                track_id = track_id.strip() if track_id else track_id
+                                track_name = track_name.strip() if track_name else track_name
+                                catalog_id = catalog_id.strip() if catalog_id else catalog_id
+                                tracks.append(Track(id=track_id, name=track_name, issued=catalog_id))
+                            parts.append(Part(personnel=personnel, date=date, tracks=tracks))
+                            elem = elem.next_sibling
+                        else:
+                            raise RuntimeError("Expected a table of tracks")
 
                         ## After one or more parts comes some notes, but we don't
                         ## know if we're at the end until we find an h2 or h3 after
@@ -192,7 +199,7 @@ class JazzDiscoSpider(scrapy.Spider):
                         if look_ahead is None or look_ahead.name in ['h3','h2']:
                             break
 
-                    yield Session(group=title, session_id=session_id, year=year, notes=notes, parts=parts)
+                    yield Session(group=title, session_id=session_id, catalog_source=artist, year=year, notes=notes, parts=parts)
 
 
 
