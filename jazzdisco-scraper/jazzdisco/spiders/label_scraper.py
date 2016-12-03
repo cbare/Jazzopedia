@@ -165,7 +165,7 @@ class LabelSpider(scrapy.Spider):
                     if look_ahead is None or look_ahead.name in ['h3','h2']:
                         break
 
-            yield Release(title=title, artist=artist, catalog_source=catalog_label, catalog_slug=catalog_slug, catalog_number=catalog_number, notes=notes, parts=parts)
+            yield Release(title=title, artist=artist, catalog_source=catalog_label, source_url=response.url, catalog_slug=catalog_slug, catalog_number=catalog_number, notes=notes, parts=parts)
 
 
     def parse_discography(self, response):
@@ -220,7 +220,7 @@ class LabelSpider(scrapy.Spider):
                 if look_ahead is None or look_ahead.name in ['h3','h2']:
                     break
 
-            yield Session(group=title, session_id=session_id, catalog_source=catalog_label, notes=notes, parts=parts)
+            yield Session(group=title, session_id=session_id, catalog_source=catalog_label, source_url=response.url, notes=notes, parts=parts)
 
 
 

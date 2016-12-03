@@ -25,6 +25,7 @@ class Release(scrapy.Item):
     title = scrapy.Field()
     artist = scrapy.Field()
     catalog_source = scrapy.Field()
+    source_url = scrapy.Field()
     catalog_slug = scrapy.Field()
     catalog_number = scrapy.Field()
     year = scrapy.Field()
@@ -34,6 +35,7 @@ class Release(scrapy.Item):
 class Session(scrapy.Item):
     session_id = scrapy.Field()
     catalog_source = scrapy.Field()
+    source_url = scrapy.Field()
     group = scrapy.Field()
     year = scrapy.Field()
     notes = scrapy.Field()
