@@ -1,0 +1,36 @@
+piano
+keyboards
+organ
+bass
+drums
+guitar
+electric guitar
+trumpet
+cornet
+piccolo trumpet
+flugelhorn
+trombone
+tuba
+saxophone
+sax
+soprano sax
+alto sax
+tenor sax
+baritone sax
+manzello
+flute
+clarinet
+bass clarinet
+oboe
+vibrophone
+vibes
+marimba
+congas
+tabla
+bongos
+cello
+violin
+percussion
+sitar
+vocals
+banjo
