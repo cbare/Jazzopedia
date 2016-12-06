@@ -4,6 +4,8 @@ Scrape label data from jazzdisco.org
 A Scrapy scraper for the Jazz Discography Project (jazzdisco.org),
 a jazz music resource by: Nobuaki Togashi, Kohji Matsubayashi, and
 Masayuki Hatta.
+
+$ scrapy labelspider
 """
 import re, scrapy
 import dateparser
@@ -220,7 +222,7 @@ class LabelSpider(scrapy.Spider):
                 if look_ahead is None or look_ahead.name in ['h3','h2']:
                     break
 
-            yield Session(group=title, session_id=session_id, catalog_source=catalog_label, source_url=response.url, notes=notes, parts=parts)
+            yield Session(group=title, session_id=session_id, catalog_source=catalog_label, source_url=response.url+'#'+session_id, notes=notes, parts=parts)
 
 
 

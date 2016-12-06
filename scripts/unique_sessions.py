@@ -6,6 +6,7 @@ sessions unmerged to be fixed up by hand.
 import json, re
 from collections import Counter, defaultdict
 from itertools import combinations
+from utils import slugify
 
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
@@ -99,12 +100,18 @@ def merge(ds):
     result['parts'] = parts
     return result
 
+
 sessions = defaultdict(list)
 with open('data/jazzdiscography.json') as f:
     for line in f:
         d = json.loads(line)
         if 'session_id' in d:
             sessions[make_key(d)].append(d)
+
+            ## add source url to session JSON
+            slug = slugify(d['catalog_source'])
+            url = 'http://jazzdisco.org/{slug}/discography#{session_id}'.format(slug=slug, session_id=d['session_id'])
+            d['source_url'] = url
 
 with open('data/label_data_jazzdisco.json') as f:
     for line in f:
@@ -117,6 +124,7 @@ unmerged_keys = []
 for k,v in sessions.items():
     us = session_superset_or_none(v)
     if us is not None:
+        us['source_urls'] = [(session['catalog_source'], session['source_url']) for session in v]
         unique_sessions.append(us)
     else:
         unmerged_keys.append(k)
@@ -127,19 +135,27 @@ with open('data/sessions_fixed.py') as f:
 unique_sessions += fixed_sessions
 unmerged_keys = [k for k in unmerged_keys if k not in fixed_session_keys]
 
+for session in unique_sessions:
+    if 'source_urls' not in session:
+        print(session)
+        raise RuntimeError("All sessions should have source urls")
+
 ## for the remaining unmerged sessions, just throw them in
 for key in unmerged_keys:
     for session in sessions[key]:
+        session['source_urls'] = [(session['catalog_source'], session['source_url']+'#'+session['session_id'])]
         unique_sessions.append(session)
 
 print('sessions:', len(sessions))
 print('merged keys:', len(unique_sessions))
-print('unmerged:', len(unmerged_keys))
 
 for session in unique_sessions:
     place, date = split_location_date(extract_date(session))
     session['date'] = date
     session['place'] = place
+
+    ## update the sort keys to contain 19 for century so they sort
+    ## properly with 21st century sort keys (that start with 20)
     m = re.match(r'^\d{6}(-.*)?$', session['session_id'])
     if m:
         session['session_id'] = '19' + session['session_id']

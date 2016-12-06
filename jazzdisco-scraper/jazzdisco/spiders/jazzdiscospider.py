@@ -4,6 +4,8 @@ Scrape data from jazzdisco.org
 A Scrapy scraper for the Jazz Discography Project (jazzdisco.org),
 a jazz music resource by: Nobuaki Togashi, Kohji Matsubayashi, and
 Masayuki Hatta.
+
+$ scrapy crawl jazzdiscospider -o out.json
 """
 import re, scrapy
 import dateparser

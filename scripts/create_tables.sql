@@ -2,7 +2,8 @@ CREATE TABLE IF NOT EXISTS Session(
   id                INTEGER PRIMARY KEY ASC,
   jd_sort_key       INTEGER,
   place             TEXT,
-  date              TEXT
+  `date`            TEXT,
+  notes             TEXT
 );
 
 CREATE TABLE IF NOT EXISTS Part(
@@ -40,8 +41,15 @@ CREATE TABLE IF NOT EXISTS `Group`(
 
 CREATE TABLE IF NOT EXISTS Person_Part(
   person_id         INTEGER,
-  part_id           INTEGER
+  part_id           INTEGER,
   role              TEXT                                          
 );
 
+CREATE TABLE IF NOT EXISTS Data_Source(
+  entity_id         INTEGER,
+  entity_type       TEXT,
+  source            TEXT,
+  url               TEXT,
+  data_quality      TEXT                        -- verified, unverified, error??
+);
 

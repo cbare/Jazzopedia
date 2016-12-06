@@ -47,3 +47,6 @@ docs/_build/
 virtual-env*
 
 .DS_Store
+
+data/discogs*
+

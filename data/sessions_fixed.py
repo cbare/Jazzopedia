@@ -1,5 +1,7 @@
 fixed_sessions = [
  {'catalog_source': 'merged: Bill Evans, Scott LaFaro',
+  'source_urls': [('Bill Evans', 'http://www.jazzdisco.org/bill-evans/discography#591028'),
+                  ('Scott LaFaro', 'http://www.jazzdisco.org/scott-lafaro/discography#591028')],
   'group': 'Tony Scott Quartet',
   'notes': '* Sunnyside SSC 1015 \xa0 <i>Tony Scott Featuring Bill Evans/Scott LaFaro/Paul Motian - Sung Heroes</i>',
   'parts': [{'date': 'Great Northern Pine Studios, NYC, October 28 & 29, 1959',
@@ -25,7 +27,11 @@ fixed_sessions = [
   'year': '1959'},
 
 
-{'catalog_source': 'merged',
+{'catalog_source': 'merged: Kenny Dorham, Eric Dolpy, Booker Little, Max Roach',
+  'source_urls': [('Kenny Dorham', 'http://www.jazzdisco.org/kenny-dorham/discography#601101'),
+                  ('Eric Dolpy', 'http://www.jazzdisco.org/eric-dolphy/discography#601101'),
+                  ('Booker Little', 'http://www.jazzdisco.org/booker-little/discography#601101'),
+                  ('Max Roach', 'http://www.jazzdisco.org/max-roach/discography#601101')],
   'group': 'Jazz Artists Guild',
   'notes': '* Candid CJM 8022, CJS 9022; Barnaby BR 5022; Candid CS 9022, CCD 79022 \xa0 <i>Jazz Artists Guild - Newport Rebels</i>',
   'parts': [{'date': 'Nola Penthouse Sound Studio, NYC, November 1, 1960',
@@ -51,7 +57,8 @@ fixed_sessions = [
   'year': '1960'},
 
 
-{'catalog_source': 'Havana Jam',
+{'catalog_source': 'merged: Havana Jam, ',
+  'source_urls': [('Havana Jam','http://www.jazzdisco.org/havana-jam/discography/')],
   'group': 'CBS Jazz All-Stars At Havana Jam',
   'notes': '* Columbia PC2 36053 \xa0 <i>Havana Jam</i><br/>\n* Columbia PC2 36180 \xa0 <i>Havana Jam II</i>',
   'parts': [{'date': '"Karl-Marx Theatre", Havana, Cuba, March 2-4, 1979',
@@ -87,6 +94,9 @@ fixed_sessions = [
 
 
 {'catalog_source': 'merged: Jackie McLean, Pat Metheny, Joe Henderson',
+  'source_urls': [('Jackie McLean','http://www.jazzdisco.org/jackie-mclean/discography#940406'),
+                  ('Pat Metheny','http://www.jazzdisco.org/pat-metheny/discography#940406'),
+                  ('Joe Henderson','http://www.jazzdisco.org/joe-henderson/discography#940406')],
   'group': 'The Jazz Masters',
   'notes': '* Verve 314 523 150-2 \xa0 <i>Various Artists - Carnegie Hall Salutes The Jazz Masters: Verve 50th Anniversary</i>',
   'parts': [
@@ -111,6 +121,8 @@ fixed_sessions = [
 
 
 {'catalog_source': 'merged: Joe Henderson, Elvin Jones',
+  'source_urls': [('Joe Henderson','http://www.jazzdisco.org/joe-henderson/discography#670925'),
+                  ('Elvin Jones','http://www.jazzdisco.org/elvin-jones/discography#670925')],
   'group': 'Lee Konitz Duets',
   'notes': '* Milestone MSP 9013; Original Jazz Classics OJC-466, OJCCD-466-2 \xa0 <i>The Lee Konitz Duets</i><br/>\n* Milestone 8MCD-4413-2 \xa0 <i>Joe Henderson - The Milestone Years</i>',
   'parts': [{'date': 'Plaza Sound Studios, NYC, September 25, 1967',
@@ -136,6 +148,8 @@ fixed_sessions = [
 
 
 {'catalog_source': 'The Sound Of Jazz',
+  'source_urls': [('The Sound Of Jazz','http://www.jazzdisco.org/the-sound-of-jazz/discography#571208'),
+                  ('The Sound Of Jazz','http://www.jazzdisco.org/the-sound-of-jazz/discography#571208-3-')],
   'group': 'Count Basie All-Stars',
   'notes': '',
   'parts': [
@@ -152,6 +166,8 @@ fixed_sessions = [
 
 
 {'catalog_source': 'John Hammond',
+  'source_urls': [('John Hammond','http://www.jazzdisco.org/john-hammond/discography#381223'),
+                  ('John Hammond','http://www.jazzdisco.org/john-hammond/discography#381223-14-')],
   'group': "Count Basie And His Orchestra At John Hammond's Spirituals To Swing",
   'notes': "* Vanguard VRS-8523/4 \xa0 <i>John Hammond's Spirituals To Swing - The Legendary Carnegie Hall Concerts Of 1938/9</i><br/>\n= Vanguard VSD-47/48 \xa0 <i>Various Artists - From Spirituals To Swing: Carnegie Hall Concerts 1938/39</i><br/>\n= Vanguard VCD-169/71-2 \xa0 <i>From Spirituals To Swing - The Legendary 1938 And 1939 Carnegie Hall Concerts Produced By John Hammond</i>",
   'parts': [
@@ -165,7 +181,9 @@ fixed_sessions = [
   'year': '1938 '},
 
 
-{'catalog_source': 'merged',
+{'catalog_source': 'Bud Powell',
+  'source_urls': [('Bud Powell','http://www.jazzdisco.org/bud-powell/discography#640808'),
+                  ('Bud Powell','http://www.jazzdisco.org/johnny-griffin/discography#640808')],
   'group': 'Bud Powell Trio With Johnny Griffin',
   'notes': '* Fontana (Du) 883 903 JCY, (E) SFJL 903 \xa0 <i>Bud Powell - Hot House</i><br/>\n= Black Lion (G) BLP 60121, (G) BLCD 760121 \xa0 <i>Bud Powell - Salt Peanuts</i><br/>\n* Duke (It) D-1012 \xa0 <i>Bud Powell - In Europe</i><br/>\n* Mythic Sound MS 6008-1, MS 6008-2 \xa0 <i>Earl Bud Powell, Vol. 8 - Holidays In Edenville, 64</i><br/>\n* Black Lion (G) BLCD 760135 \xa0 <i>Bud Powell - Blues For Bouffemont</i>',
   'parts': [{'date': '"Hotel-Restaurant La Belle Escale", Edenville, France, August 8-14, 1964',
@@ -221,6 +239,7 @@ fixed_sessions = [
 
 
  {'catalog_source': 'Atlantic Records Discography: 1972',
+  'source_urls': [('Atlantic Records Discography: 1972','http://www.jazzdisco.org/atlantic-records/discography-1972/#720706-2-')],
   'group': "Newport In New York '72",
   'notes': "* Cobblestone CST 9025-2 \xa0 <i>Various Artists - Newport In New York '72: The Jam Sessions, Vol. 1&amp;2</i><br/>\n= Cobblestone CST 9032-6 \xa0 <i>Various Artists - Newport In New York '72</i><br/>\n* Atlantic (Eu) ATL 40445 \xa0 <i>Various Artists - Newport In New York '72: The Jam Sessions, Vol. 1</i><br/>\n* Cobblestone CST 9026-2 \xa0 <i>Various Artists - Newport In New York '72: The Jam Sessions, Vol. 3&amp;4</i><br/>\n= Cobblestone CST 9032-6 \xa0 <i>Various Artists - Newport In New York '72</i><br/>\n* Atlantic (Eu) ATL 40447 \xa0 <i>Various Artists - Newport In New York '72: The Jam Sessions, Vol. 3</i><br/>\n* Atlantic (Eu) ATL 40448 \xa0 <i>Various Artists - Newport In New York '72: The Jam Sessions, Vol. 4</i>",
   'parts': [{'date': 'Radio City Music Hall, NYC, July 6, 1972',
@@ -245,6 +264,11 @@ fixed_sessions = [
 
 
  {'catalog_source': 'Atlantic Records Discography: 1972',
+  'source_urls': [('Atlantic Records Discography: 1972','http://www.jazzdisco.org/atlantic-records/discography-1972/#720703'),
+                  ('Dizzy Gillespie','http://www.jazzdisco.org/dizzy-gillespie/discography/#720703'),
+                  ('Stan Getz','http://www.jazzdisco.org/stan-getz/discography/#720703'),
+                  ('Milt Jackson','http://www.jazzdisco.org/milt-jackson/discography/#720703'),
+                  ('Max Roach','http://www.jazzdisco.org/max-roach/discography/#720703')],
   'group': "Newport In New York '72",
   'notes': "* Cobblestone CST 9025-2 \xa0 <i>Various Artists - Newport In New York '72: The Jam Sessions, Vol. 1&amp;2</i><br/>\n= Cobblestone CST 9032-6 \xa0 <i>Various Artists - Newport In New York '72</i><br/>\n* Atlantic (Eu) ATL 40446 \xa0 <i>Various Artists - Newport In New York '72: The Jam Sessions, Vol. 2</i><br/>\n* Cobblestone CST 9026-2 \xa0 <i>Various Artists - Newport In New York '72: The Jam Sessions, Vol. 3&amp;4</i><br/>\n= Cobblestone CST 9032-6 \xa0 <i>Various Artists - Newport In New York '72</i><br/>\n* Atlantic (Eu) ATL 40448 \xa0 <i>Various Artists - Newport In New York '72: The Jam Sessions, Vol. 4</i>",
   'parts': [{'date': 'Radio City Music Hall, NYC, July 3, 1972',
@@ -262,34 +286,38 @@ fixed_sessions = [
 
 
 {'catalog_source': 'Dick Garcia',
+  'source_urls': [('Dick Garcia','http://www.jazzdisco.org/dick-garcia/discography/#560000')],
   'group': 'Richie "Dick" Garcia Quartet',
   'notes': '* Dawn DLP 1106 \xa0 <i>Richie "Dick" Garcia - A Message From Garcia</i><br/>\n= Seeco CELP 428, CELPS 4280 \xa0 <i>Tony Scott/Bill Evans/Gene Quill/Dick Garcia - The Hi-Fi Land Of Jazz</i><br/>\n* Dawn DLP 1123 \xa0 <i>Various Artists - Critics\' Choice</i>',
   'parts': [{'date': 'NYC, 1956',
     'personnel': 'Tony Scott (clarinet) Richie "Dick" Garcia (guitar) John Drew (bass) Camille Morin (drums)',
-    'tracks': [{'id': None,
-      'issued': 'Dawn DLP 1106',
-      'name': 'Have You Met Miss Jones'},
-     {'id': None,
-      'issued': '-',
-      'name': "I Don't Want To Set The World On Fire"},
+    'tracks': [
+     {'id': None, 'issued': 'Dawn DLP 1106', 'name': 'Have You Met Miss Jones'},
+     {'id': None, 'issued': '-', 'name': "I Don't Want To Set The World On Fire"},
      {'id': None, 'issued': 'Dawn DLP 1106, DLP 1123', 'name': 'Potatoes'}]}],
   'session_id': '560000',
   'year': '1956'},
- {'catalog_source': 'Dick Garcia',
+
+
+{'catalog_source': 'Dick Garcia',
+  'source_urls': [('Dick Garcia','http://www.jazzdisco.org/dick-garcia/discography/#560000'),
+                  ('Bill Evans', 'http://www.jazzdisco.org/bill-evans/discography/#560000')],
   'group': 'Richie "Dick" Garcia Quartet',
   'notes': '* Dawn DLP 1106 \xa0 <i>Richie "Dick" Garcia - A Message From Garcia</i><br/>\n= Seeco CELP 428, CELPS 4280 \xa0 <i>Tony Scott/Bill Evans/Gene Quill/Dick Garcia - The Hi-Fi Land Of Jazz</i>',
   'parts': [{'date': 'NYC, 1956',
     'personnel': 'Bill Evans (piano) Richie "Dick" Garcia (guitar) Jerry Bruno (bass) Camille Morin (drums)',
-    'tracks': [{'id': None,
-      'issued': 'Dawn DLP 1106',
-      'name': 'Kimona My House'},
+    'tracks': [
+     {'id': None, 'issued': 'Dawn DLP 1106', 'name': 'Kimona My House'},
      {'id': None, 'issued': '-', 'name': 'Like Someone In Love'},
      {'id': None, 'issued': '-', 'name': 'Every Night About This Time'}]}],
   'session_id': '560000-3-',
   'year': '1956'},
 
 
- {'catalog_source': 'Contemporary Records Discography: 1951-1954',
+ {'catalog_source': 'merged: Chet Baker, Max Roach, Contemporary Records Discography: 1951-1954',
+  'source_urls': [('Contemporary Records Discography: 1951-1954','http://www.jazzdisco.org/contemporary-records/discography-1951-1954/#530913'),
+                  ('Chet Baker','http://www.jazzdisco.org/chet-baker/discography/#530913'),
+                  ('Max Roach', 'http://www.jazzdisco.org/max-roach/discography/#530913')],
   'group': "Howard Rumsey's Lighthouse All-Stars",
   'notes': "* Contemporary C 7645; Original Jazz Classics OJC-480, OJCCD-480-2 \xa0 <i>Miles Davis And The Lighthouse All-Stars - At Last!</i><br/>\n* Contemporary C 7649; Original Jazz Classics OJC-609, OJCCD-609-2 \xa0 <i>Chet Baker And The Lighthouse All-Stars - Witch Doctor</i><br/>\n* Contemporary CCD-14077-2 \xa0 <i>Howard Rumsey's Lighthouse All-Stars - Mexican Passport</i>",
   'parts': [{'date': '"The Lighthouse", Hermosa Beach, CA, September 13, 1953',
@@ -319,6 +347,8 @@ fixed_sessions = [
 
 
  {'catalog_source': 'The Ellingtonians',
+  'source_urls': [('The Ellingtonians','http://www.jazzdisco.org/the-ellingtonians/discography/#500921'),
+                  ('The Ellingtonians','http://www.jazzdisco.org/the-ellingtonians/discography/#500921-3-')],
   'group': 'The Ellingtonians With Chubby Kemp / Chubby Kemp And Her All Stars',
   'notes': "* Jazz Legacy (F) 500112 \xa0 <i>Johnny Hodges - Jumpin': Jazz Legacy 62</i><br/>\n* Mercer M 1971 \xa0 <i>Chubby Kemp - Me And My Wig / Juke Bop Boogie</i><br/>\n* Mercer M 1960 \xa0 <i>The Ellingtonians/Chubby Kemp - How Blue Can You Get / Sara Forde/Mercer Ellington - Set 'Em Up</i><br/>\n* Vogue (F) V 3099 \xa0 <i>Johnny Hodges - Hello Little Boy / Juke Bop Boogie</i>",
   'parts': [{'date': 'NYC, September 21, 1950',
@@ -343,7 +373,10 @@ fixed_sessions = [
   'year': '1950'},
 
 
- {'catalog_source': 'merged: Tommy Flanagan, Mal Waldron, Wynton Kelly',
+ {'catalog_source': 'merged: Tommy Flanagan, Wynton Kelly, Mal Waldron',
+  'source_urls': [('Tommy Flanagan','http://www.jazzdisco.org/tommy-flanagan/discography/#600900'),
+                  ('Wynton Kelly','http://www.jazzdisco.org/wynton-kelly/discography/#600900'),
+                  ('Mal Waldron','http://www.jazzdisco.org/mal-waldron/discography/#600900')],
   'group': 'Nat Wright',
   'notes': '* Warwick W 2040, W 2040 ST \xa0 <i>Nat Wright - The Biggest Voice In Jazz</i>',
   'parts': [{'date': 'NYC, September, 1960',
@@ -367,6 +400,8 @@ fixed_sessions = [
 
 
 {'catalog_source': 'merged: Chet Baker, Paul Desmond',
+  'source_urls': [('Chet Baker','http://www.jazzdisco.org/chet-baker/discography/#750423'),
+                  ('Paul Desmond','http://www.jazzdisco.org/paul-desmond/discography/#750423')],
   'group': 'Jim Hall Sextet',
   'notes': '* CTI 6060 S1, 8012; CTI/Associated ZK 40807; CTI/Legacy ZK 65132 \xa0 <i>Jim Hall - Concierto</i>',
   'parts': [
@@ -390,6 +425,8 @@ fixed_sessions = [
 
 
 {'catalog_source': 'Blue Note Records Discography: 1985-1986',
+  'source_urls': [('Blue Note Records Discography: 1985-1986','http://www.jazzdisco.org/blue-note-records/discography-1985-1986/#861210-2-'),
+                  ('Blue Note Records Discography: 1985-1986','http://www.jazzdisco.org/blue-note-records/discography-1985-1986/#861210-4-')],
   'group': 'Stanley Turrentine Quintet',
   'notes': '* Blue Note BT 85140, CDP 7 46762 2 \xa0 <i>Stanley Turrentine - Wonderland</i>',
   'parts': [
@@ -407,6 +444,8 @@ fixed_sessions = [
 
 
 {'catalog_source': 'Yusef Lateef',
+  'source_urls': [('Yusef Lateef','http://www.jazzdisco.org/yusef-lateef/discography/#700407'),
+                  ('Yusef Lateef','http://www.jazzdisco.org/yusef-lateef/discography/#700407-4-')],
   'group': 'Yusef Lateef Octet',
   'notes': '',
   'parts': [
@@ -421,35 +460,6 @@ fixed_sessions = [
   'session_id': '700407',
   'year': '1970 '},
 
-
-{'catalog_source': 'Fantasy Records Discography: 1980-present',
-  'group': 'Cal Tjader And His Orchestra',
-  'notes': "* Fantasy F-24736, FCD-24736-2 \xa0 <i>Cal Tjader's Greatest Hits</i>",
-  'parts': [{'date': 'unknown location, date',
-    'personnel': 'Al Porcino (trumpet) Paul Horn, Jerome Richardson (flute) Brew Moore (tenor sax) Cal Tjader (vibes, drums) Clare Fischer, Vince Guaraldi, Lonnie Hewitt (piano) Eddie Duran (guitar) Al McKibbon, Red Mitchell (bass) Billy Higgins, Shelly Manne (drums) Mongo Santamaria (congas) Willie Bobo, Armando Peraza, Bayardo Velarde (percussion) and others',
-    'tracks': [{'id': None,
-      'issued': 'Fantasy F-24736',
-      'name': 'Soul Sauce (Wachi Wara)'},
-     {'id': None, 'issued': '-', 'name': 'Mamblues'},
-     {'id': None, 'issued': '-', 'name': 'Cool'},
-     {'id': None, 'issued': '-', 'name': 'Cubano Chant'},
-     {'id': None, 'issued': '-', 'name': 'Ginza Samba'},
-     {'id': None, 'issued': '-', 'name': 'Black Orchid'},
-     {'id': None, 'issued': '-', 'name': 'Doxy, Part 1&2'},
-     {'id': None, 'issued': '-', 'name': 'Lucero'},
-     {'id': None, 'issued': '-', 'name': 'Maria'},
-     {'id': None, 'issued': '-', 'name': 'Afro Blue'},
-     {'id': None, 'issued': '-', 'name': 'Invitation'},
-     {'id': None, 'issued': '-', 'name': 'Viva Cepeda'},
-     {'id': None, 'issued': '-', 'name': 'Mambo Macumba'},
-     {'id': None, 'issued': '-', 'name': 'Ritmo Africano'},
-     {'id': None, 'issued': '-', 'name': 'Tumbao'},
-     {'id': None, 'issued': '-', 'name': 'Bonita'},
-     {'id': None, 'issued': '-', 'name': 'A Night In Tunisia'},
-     {'id': None, 'issued': '-', 'name': 'Sonny Boy'},
-     {'id': None, 'issued': '-', 'name': 'Mambo Terrifico'},
-     {'id': None, 'issued': '-', 'name': 'Ritmo Caliente'}]}],
-  'session_id': 'others-4-'},
 ]
 
 fixed_session_keys = [make_key(s) for s in fixed_sessions]

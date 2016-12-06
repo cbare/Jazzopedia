@@ -6,7 +6,7 @@ import bs4
 import re
 
 alternate_names = {}
-with open('data/alternate_names.txt') as f:
+with open('/Users/CBare/Documents/projects/jazz_discography/data/alternate_names.txt') as f:
     for line in f:
         names = line.strip().split('|')
         for name in names:
