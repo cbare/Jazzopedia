@@ -1,0 +1,63 @@
+<!doctype html>
+<head>
+<title>{{ m['name'] }}</title>
+</head>
+
+<body>
+  <div class=page>
+  <h1>{{ m['name'] }}</h1>
+
+  <p>{{ m['full_name'] or '' }}{{ birth_death|safe }}</p>
+  <p>{{ ', '.join(m['roles']) }}</p>
+
+  <h3>Discography</h3>
+  <p><a href="sessions">session discography</a></p>
+
+  <h3>Links</h3>
+  <ul>
+  {% for link in links %}
+    <li><a href="{{link['url']}}">{{link['source']}}</a></li>
+  {% endfor %}
+  </ul>
+
+  <p>To do:</p>
+  <ul>
+      <li>bio w/ source (wikipedia, discogs profile, last.fm)</li>
+      <li>pic(s)</li>
+      <li>catalog</li>
+      <li>sessions</li>
+      <li>links
+        <ul><li>jazzdisco.org</li>
+            <li>wikipedia</li>
+            <li>discogs</li>
+            <li>allmusic</li>
+            <li>last.fm</li></ul></li>
+  </ul>
+  </p>
+
+<!-- 
+  <h2>Sessions</h2>
+  {% for session in sessions %}
+    <h3>{{ session.group }}</h3>
+    <p>{{ session['place'] }}; {{ session['date'] }}</p>
+    {% for part in session['parts'] %}
+    <p>{{ part['personnel'] }}</p>
+    <table>
+    {% for track in part['tracks'] %}
+    <tr>
+      <td>{{ track['id'] }}</td>
+      <td>{{ track['name'] }}</td>
+      <td>{{ track['issued'] }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% endfor %}
+    <p>{{ session['notes']|safe }}</p>
+  {% endfor %}
+ -->
+  </div>
+  <div id="footer">
+    <p><a href="/">home</a> - Rendered in {{ g.request_time() }}</p>
+  </div>
+</body>
+</html>

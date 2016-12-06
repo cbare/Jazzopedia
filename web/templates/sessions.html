@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ person['name'] }} Session Discography</title>
+</head>
+
+<body>
+  <div class=page>
+  <h1>{{ person['name'] }} Session Discography</h1>
+
+  {% for session in sessions %}
+    <h3>{{ session.group }}</h3>
+    <p>{{ session['place'] }}; {{ session['date'] }}</p>
+    {% for part in session['parts'] %}
+    <p>{{ part['personnel'] }}</p>
+    <table>
+    {% for track in part['tracks'] %}
+    <tr>
+      <td>{{ track['catalog_id'] or '' }}</td>
+      <td>{{ track['name'] }}</td>
+      <td>{{ track['issued'] or '' }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% endfor %}
+    <p>{{ session['notes']|safe }}</p>
+  {% endfor %}
+
+  </div>
+  <div id="footer">
+    <p><a href="/">home</a> - Rendered in {{ g.request_time() }}</p>
+  </div>
+</body>
+</html>

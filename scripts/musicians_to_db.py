@@ -96,8 +96,9 @@ with sqlite3.connect(path) as conn:
         for line in f:
             s = json.loads(line)
 
-            c.execute('INSERT INTO Session (jd_sort_key, place, `date`, notes) values (?,?,?,?);',
+            c.execute('INSERT INTO Session (jd_sort_key, `group`, place, `date`, notes) values (?,?,?,?,?);',
                       [s['session_id'],
+                       s['group'],
                        s['place'],
                        s['date'],
                        s['notes']])
@@ -115,15 +116,19 @@ with sqlite3.connect(path) as conn:
                 print(s)
                 raise RuntimeError("all sessions should have source urls")
 
+            part_order = 0
             for part in s['parts']:
+                part_order += 1
 
                 ## add part to db
-                c.execute('INSERT INTO Part (session_id, personnel) values (?,?);',
-                          [session_id, part['personnel']])
+                c.execute('INSERT INTO Part (sort_order, session_id, personnel) values (?,?,?);',
+                          [part_order, session_id, part['personnel']])
                 part_id = c.lastrowid
+                track_order = 0
                 for track in part['tracks']:
-                    c.execute('INSERT INTO Track (part_id, name, issued, catalog_id) values (?,?,?,?);',
-                              [part_id, track['name'], track['issued'] or None, track['id'] or None])
+                    track_order += 1
+                    c.execute('INSERT INTO Track (sort_order, part_id, name, issued, catalog_id) values (?,?,?,?,?);',
+                              [track_order, part_id, track['name'], track['issued'] or None, track['id'] or None])
 
                 ## extract musician - role pairs out of unstructured personnel lists
                 for name, role in fixup_pairs(process_personnel(part['personnel'])):
