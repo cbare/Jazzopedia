@@ -132,18 +132,25 @@ with sqlite3.connect(path) as conn:
 
                 ## extract musician - role pairs out of unstructured personnel lists
                 for name, role in fixup_pairs(process_personnel(part['personnel'])):
-                    if name in cats:
+                    if name=='Bill Evans' and\
+                       any((instr in role.lower()) for instr in ['sax', 'soprano', 'tenor', 'flute']):
+                        person_id = bill_evans_sax_id
+                    elif name in cats:
                         person_id = cats[name]
-                        if name=='Bill Evans':
-                            if any(instr in role.lower() for instr in ['sax', 'soprano', 'tenor', 'flute']):
-                                person_id = bill_evans_sax_id
                     else:
                         c.execute('INSERT INTO Person (name, slug) VALUES (?, ?);', [name, slugify(name)])
                         person_id = c.lastrowid
+                        cats[name] = person_id
 
-                    cats[name] = person_id
                     c.execute('INSERT INTO Person_Part (person_id, part_id, role) values (?,?,?);',
                               [person_id, part_id, role])
+
+        ## Direct linkage between person and session, though this is redundant with parts
+        c.execute('INSERT INTO Person_Session '\
+                  'SELECT distinct pp.person_id as person_id, p.session_id as session_id '\
+                  'FROM Person_Part pp '\
+                  '     JOIN Part p ON p.id=pp.part_id '\
+                  'ORDER BY person_id;')
 
     ## a little data quality control
     c.execute('SELECT count(*) FROM Person;')

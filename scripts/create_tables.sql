@@ -47,6 +47,7 @@ CREATE TABLE IF NOT EXISTS `Group`(
   description       TEXT,
   slug              TEXT
 );
+CREATE UNIQUE INDEX index_group_slug ON `Group`(slug COLLATE nocase);
 
 CREATE TABLE IF NOT EXISTS Person_Part(
   person_id         INTEGER,
@@ -56,6 +57,13 @@ CREATE TABLE IF NOT EXISTS Person_Part(
   FOREIGN KEY(part_id) REFERENCES Part(id)
 );
 
+CREATE TABLE IF NOT EXISTS Person_Session(
+  person_id         INTEGER,
+  session_id        INTEGER,
+  FOREIGN KEY(person_id) REFERENCES Person(id),
+  FOREIGN KEY(session_id) REFERENCES Session(id)
+);
+
 CREATE TABLE IF NOT EXISTS Data_Source(
   entity_id         INTEGER,
   entity_type       TEXT,
@@ -63,4 +71,5 @@ CREATE TABLE IF NOT EXISTS Data_Source(
   url               TEXT,
   data_quality      TEXT                        -- verified, unverified, error??, link??
 );
+CREATE INDEX index_data_source ON Data_Source(entity_id,entity_type);
 
