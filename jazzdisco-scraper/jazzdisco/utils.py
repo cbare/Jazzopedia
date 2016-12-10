@@ -90,9 +90,18 @@ def process_title(line):
     """
     Split title line into artist, title, and catalog number
     """
-    m = re.match(r'(?:(.+?) - )?(.*)\s\s\((.+)\)$', line.strip())
+    m = re.match(r'(.*?)\s\s\((.+)\)$', line.strip())
     if m:
-        return m.group(1), m.group(2), m.group(3)
+        artist = None
+        title = m.group(1)
+        catalog_number = m.group(2)
+
+        fields = re.split(r' - ', title)
+        if len(fields) == 2:
+            artist = fields[0]
+            title  = fields[1]
+
+        return artist, title, catalog_number
     else:
         raise RuntimeError("Unable to parse title line.", line)
 
