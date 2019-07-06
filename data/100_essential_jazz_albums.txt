@@ -1,0 +1,543 @@
+# http://www.newyorker.com/online/2008/05/19/080519on_onlineonly_remnick?currentPage=all
+# 100 Essential Jazz Albums
+# David Remnick
+# New Yorker May 19, 2008
+1. Fats Waller
+link: http://www.amazon.com/Handful-Keys-Fats-Waller/dp/B0002DSA1G
+title: Handful of Keys
+label: Proper, 2004
+recorded: 1922-43
+
+2. King Oliver
+link: http://www.amazon.com/King-Olivers-Creole-Jazz-Band/dp/B000005R5L
+title: King Oliver&#8217;s Creole Jazz Band: The Complete Set
+label: Challenge, 1997
+recorded: 1923
+
+3. Louis Armstrong
+link: http://www.amazon.com/Complete-Hot-Five-Seven-Recordings/dp/B000GRTQP2
+title: The Complete Hot Five and Hot Seven Recordings
+label: Sony, 2006
+recorded: 1925-29
+
+4. Louis Armstrong
+link: http://www.amazon.com/Complete-Victor-Recordings-Louis-Armstrong/dp/B00005O6KK
+title: The Complete RCA Victor Recordings
+label: RCA, 2001
+recorded: 1932-33 and 1946-47
+
+5. Louis Armstrong
+link: http://www.amazon.com/Louis-Armstrong-Plays-W-C-Handy/dp/B0012GMUVI
+title: Louis Armstrong Plays W. C. Handy
+label: Columbia, 1954
+
+6. Fletcher Henderson
+link: http://www.amazon.com/Tidal-Wave-Fletcher-Henderson/dp/B000003N45
+title: Tidal Wave
+label: Verve, 1994
+recorded: 1931-1934
+
+7. Bessie Smith
+link: http://www.amazon.com/Essential-Bessie-Smith/dp/B000002ADO
+title: The Essential Bessie Smith
+label: Sony, 1997
+recorded: 1923-33
+
+8. Bix Beiderbecke
+link: http://www.amazon.com/Bix-Beiderbecke-Story/dp/B0000DZH5C
+title: The Bix Beiderbecke Story
+label: Proper, 2003
+recorded: 1924-30
+
+9. Django Reinhardt
+link: http://www.amazon.com/Classic-Early-Recordings-Chronological-Order/dp/B00004S5WA
+title: The Classic Early Recordings in Chronological Order
+label: JSP, 2000
+recorded: 1934-39
+
+10. Jelly Roll Morton
+link: http://www.amazon.com/Jelly-Roll-Morton-1926-1930/dp/B00004WK09
+title: Jelly Roll Morton: 1926-1930
+label: JSP, 2000
+
+11. Sidney Bechet
+link: http://www.amazon.com/Sidney-Bechet-Story/dp/B000059RI1
+title: The Sidney Bechet Story
+label: Proper, 2001
+recorded: 1923-50
+
+12. Duke Ellington
+link: http://www.amazon.com/OKeh-Ellington-Duke/dp/B00000274L
+title: The OKeh Ellington
+label: Sony, 1991&#8212;tracks recorded 1927-31
+
+13. Duke Ellington
+link: http://www.amazon.com/Golden-Greats-Duke-Ellington/dp/B000063UOM
+title: Golden Greats
+label: Disky, 2002
+recorded: 1927-48
+
+14. Duke Ellington
+link: http://www.amazon.com/Never-No-Lament-Blanton-Webster-Band/dp/B00008J2IX
+title: Never No Lament: The Blanton-Webster Band
+label: RCA, 2003
+recorded: 1940-42
+
+15. Duke Ellington
+link: http://www.amazon.com/Ellington-At-Newport-1956-Duke/dp/B00000IMYA
+title: Ellington at Newport 1956
+label: Sony, 1999
+
+16. Duke Ellington
+link: http://www.amazon.com/Money-Jungle-Duke-Ellington/dp/B0000691U1
+title: Money Jungle
+label: Blue Note Records, 1962
+
+17. Coleman Hawkins
+link: http://www.amazon.com/Essential-Sides-1929-1939-Coleman-Hawkins/dp/B000IAZ3SG
+title: The Essential Sides Remastered, 1929-39
+label: JSP, 2006
+
+18. Coleman Hawkins
+link: http://www.amazon.com/Bebop-Years-Coleman-Hawkins/dp/B000051TPD
+title: The Bebop Years
+label: Proper, 2001
+recorded: 1939-49
+
+19. Billie Holiday
+link: http://www.amazon.com/Lady-Day-Master-Takes-Singles/dp/B000ROALA8
+title: Lady Day: The Master Takes and Singles
+label: Sony, 2007
+recorded: 1933-44
+
+20. Teddy Wilson
+link: http://www.amazon.com/Noble-Art-Teddy-Wilson/dp/B00006GXFR
+title: The Noble Art of Teddy Wilson
+label: ASV Living Era, 2002
+recorded: 1933-46
+
+21. Lester Young
+link: http://www.mosaicrecords.com/prodinfo.asp?number=239-MD-CD
+title: The Lester Young/Count Basie Sessions 1936-40
+label: Mosaic, 2008; available direct through Mosaic
+
+22. Lester Young
+link: http://www.amazon.com/Kansas-City-Swing-Lester-Young/dp/B00002818U
+title: Kansas City Swing
+label: Definitive, 2004
+recorded: 1938-44
+
+23. Count Basie
+link: http://www.amazon.com/Complete-Decca-Recordings-Count-Basie/dp/B000003N3G
+title: The Complete Decca Recordings
+label: Verve, 1992
+recorded: 1937-39
+
+24. Count Basie
+link: http://www.amazon.com/Complete-Atomic-Basie-Count/dp/B000005GX2
+title: The Complete Atomic Basie
+label: Blue Note, 1994
+recorded: 1958
+
+25. Benny Goodman
+link: http://www.amazon.com/Carnegie-Hall-Concert-Benny-Goodman/dp/B00002MZ2L
+title: At Carnegie Hall&#8212;1938&#8212;Complete
+label: Columbia, 1999
+
+26. John Kirby Sextet
+link: http://www.amazon.com/Night-Whispers-John-Kirby-Sextet/dp/B0009MAPPO
+title: Night Whispers: 1938-46
+label: Jazz Legends, 2005
+
+27. Chick Webb
+link: http://www.amazon.com/Stomping-Savoy-Chick-Webb-Orchestra/dp/B000DNVRZ6
+title: Stomping at the Savoy
+label: Proper, 2006
+recorded: 1931-39
+
+28. Benny Carter
+link: http://www.amazon.com/3-Verve-Small-Group-Sessions/dp/B0000047CL
+title: 3, 4, 5: The Verve Small Group Sessions
+label: Polygram, 1991
+recorded: 1954
+
+29. Charlie Christian
+link: http://www.amazon.com/Genius-Electric-Guitar-Charlie-Christian/dp/B000BUEGT0
+title: The Genius of the Electric Guitar
+label: Definitive, 2005
+recorded: 1939-41
+
+30. James P. Johnson
+link: http://www.amazon.com/Original-James-P-Johnson-1942-1945/dp/B000001DM5
+title: The Original James P. Johnson: 1942-1945 Piano Solos
+label: Smithsonian Folkways, 1996
+
+31. The Nat King Cole Trio
+link: http://www.amazon.com/Best-Nat-King-Cole-Trio/dp/B000005H11
+title: The Best of the Nat King Cole Trio: The Vocal Classics, Vol. 1, 1942-1946
+label: Blue Note, 1995
+
+32. Charlie Parker
+link: http://www.amazon.com/Complete-Savoy-Dial-Studio-Sessions/dp/B00006ALBM
+title: The Complete Savoy and Dial Sessions
+label: Uptown Jazz, 2005
+recorded: 1944-48
+
+33. Charlie Parker
+link: http://www.amazon.com/Bird-Complete-Charlie-Parker-Verve/dp/B00000478B
+title: Bird: The Complete Charlie Parker on Verve
+label: Polygram, 1988
+recorded: 1946-54
+
+34. Charlie Parker
+link: http://www.amazon.com/Best-Complete-Live-Performances-Savoy/dp/B0000667Q7
+title: Best of the Complete Live Performances on Savoy
+label: Savoy, 2002
+recorded: 1948-49
+
+35. Dizzy Gillespie and Charlie Parker
+link: http://www.amazon.com/Town-Hall-York-City-June/dp/B0009Q0EQ0
+title: Town Hall, New York City, June 22, 1945
+label: Uptown Jazz, 2005
+
+36. Dizzy Gillespie
+link: http://www.amazon.com/Complete-RCA-Victor-Recordings-1947-1949/dp/B000002WRX
+title: The Complete RCA Victor Recordings, 1947-49
+label: RCA, 1995
+
+37. Thelonious Monk
+link: http://www.amazon.com/Genius-Modern-Music-Vol-1/dp/B00005MIZ4
+title: Genius of Modern Music, Vol. 1
+label: Blue Note, 2001
+recorded: 1947
+
+38. Thelonious Monk
+link: http://www.amazon.com/Live-at-Club-Thelonious-Monk/dp/B0000062F9
+title: Live at the It Club, 1964
+label: Sony, 1998
+
+39. Thelonious Monk
+link: http://www.amazon.com/Complete-1957-Riverside-Recordings-CD/dp/B000FBHCQO
+title: Thelonious Monk with John Coltrane: The Complete 1957 Riverside Recordings
+label: Riverside, 2006
+
+40. Lennie Tristano and Warne Marsh
+link: http://www.amazon.com/Intuition-Lennie-Tristano/dp/B000005H6T
+title: Intuition
+label: Blue Note, 1996
+recorded: 1949 and 1956
+
+41. Miles Davis
+link: http://www.amazon.com/Complete-Birth-Cool-Miles-Davis/dp/B000006Q6B
+title: The Complete Birth of the Cool
+label: Blue Note, 1998
+recorded: 1948-50
+
+42. Miles Davis
+link: http://www.amazon.com/Groove-Miles-Davis-Modern-Giants/dp/B000000YDT
+title: Bags&#8217; Groove
+label: Prestige, 1954
+
+43. Miles Davis
+link: http://www.amazon.com/Kind-Blue-Miles-Davis/dp/B000002ADT
+title: Kind of Blue
+label: Sony, 1959
+
+44. Miles Davis
+link: http://www.amazon.com/Highlights-Plugged-Nickel-Miles-Davis/dp/B0012GMYOG
+title: Highlights from the Plugged Nickel
+label: Sony, 1995
+recorded: 1965
+
+45. Miles Davis
+link: http://www.amazon.com/Bitches-Brew-Miles-Davis/dp/B00000J7SS
+title: Bitches Brew
+label: Columbia, 1969
+
+46. Bud Powell
+link: http://www.amazon.com/Amazing-Bud-Powell-Vol-1/dp/B00005LANK
+title: The Amazing Bud Powell, Vol. 1
+label: Blue Note, 2001
+recorded: 1949-1951), Vol. 2 (Blue Note, 2001
+recorded: 1953
+
+47. Gerry Mulligan
+link: http://www.amazon.com/Original-Quartet-Chet-Baker-2-CD/dp/B000007TFR
+title: The Original Quartet with Chet Baker
+label: Blue Note, 1998
+recorded: 1952-53
+
+48. Modern Jazz Quartet
+link: http://www.amazon.com/Django-Modern-Jazz-Quartet/dp/B000EMGIJ6
+title: Django
+label: Prestige, 1953
+
+49. Art Tatum
+link: http://www.amazon.com/Best-Pablo-Solo-Masterpieces/dp/B0000E1WN1
+title: The Best of the Pablo Solo Masterpieces
+label: Pablo, 2003
+recorded: 1953-56
+
+50. Clifford Brown and Max Roach
+link: http://www.amazon.com/Clifford-Brown-Max-Roach/dp/B00004NHC0
+title: Clifford Brown &#38;amp; Max Roach
+label: EmArcy, 1954
+
+51. Sarah Vaughan
+link: http://www.amazon.com/Sarah-Vaughan-W-Clifford-Brown/dp/B00004NHCC
+title: Sarah Vaughan with Clifford Brown
+label: EmArcy, 1954
+
+52. Charles Mingus
+link: http://www.amazon.com/Mingus-at-Bohemia-Charles/dp/B000000Y2U
+title: Mingus at the Bohemia</a>(Debut, 1955
+
+53. Charles Mingus
+link: http://www.amazon.com/Mingus-Ah-Um-Charles/dp/B00000I14Z
+title: Mingus Ah Um
+label: Columbia, 1959
+
+54. Charles Mingus Sextet
+link: http://www.amazon.com/Cornell-1964-Charles-Mingus-Sextet/dp/B000R7G77G
+title: Cornell 1964
+label: Blue Note, 2007
+
+55. Ella Fitzgerald
+link: http://www.amazon.com/Ella-Fitzgerald-Sings-Porter-Songbook/dp/B0000047EG
+title: Ella Fitzgerald Sings the Cole Porter Songbook
+label: Verve, 1956
+
+56. Sonny Rollins
+link: http://www.amazon.com/Saxophone-Colossus-Sonny-Rollins/dp/B000EGDAI4
+title: Saxophone Colossus
+label: Prestige, 1956
+
+57. Sonny Rollins
+link: http://www.amazon.com/Night-Village-Vanguard-Sonny-Rollins/dp/B00000K4GJ
+title: Night at the Village Vanguard
+label: Blue Note, 1957
+
+58. Sonny Rollins and Coleman Hawkins
+link: http://www.amazon.com/Sonny-Meets-Rollins-Coleman-Hawkins/dp/B00000IOPB
+title: Sonny Meets Hawk!
+label: RCA, 1963
+
+59. Tito Puente
+link: http://www.amazon.com/King-Kings-Very-Best-Puente/dp/B00006EXC9
+title: King of Kings: The Very Best of Tito Puente
+label: RCA, 2002
+recorded: 1956-60
+
+60. Sun Ra
+link: http://www.amazon.com/Greatest-Hits-Listening-Intergalactic-Travel/dp/B00004XSLI
+title: Greatest Hits&#8212;Easy Listening for Intergalactic Travel
+label: Evidence, 2000
+recorded: 1956-73
+
+61. Abbey Lincoln
+link: http://www.amazon.com/Thats-Him-Abbey-Lincoln/dp/B000000Y53
+title: That&#8217;s Him
+label: Riverside, 1957
+
+62. Art Blakey and the Jazz Messengers
+link: http://www.amazon.com/Moanin-Art-Blakey-Jazz-Messengers/dp/B00000I8UF
+title: Moanin&#8217;
+label: Blue Note, 1958
+
+63. Ahmad Jamal Trio
+link: http://www.amazon.com/Cross-Country-Tour-Ahmad-Jamal/dp/B000006EJ4
+title: Cross Country Tour: 1958-1961
+label: Verve, 1998
+
+64. The Dave Brubeck Quartet
+link: http://www.amazon.com/Time-Out-Dave-Brubeck-Quartet/dp/B000002AGN
+title: Time Out
+label: Sony, 1959
+
+65. Jimmy Witherspoon
+link: http://www.amazon.com/Spoon-Concerts-Jimmy-Witherspoon/dp/B000000XEY
+title: The &#8217;Spoon Concerts
+label: Fantasy, 1989
+recorded: 1959
+
+66. Ornette Coleman
+link: http://www.amazon.com/Beauty-Rare-Thing-Complete-Recordings/dp/B00000332J
+title: Beauty Is a Rare Thing: The Complete Atlantic Recordings
+label: Atlantic, 1993
+recorded: 1959-61
+
+67. Ornette Coleman
+link: http://www.amazon.com/Dancing-Your-Head-Ornette-Coleman/dp/B00004STMT
+title: Dancing in Your Head
+label: Horizon, 1973
+
+68. Freddie Hubbard
+link: http://www.amazon.com/Open-Sesame-Freddie-Hubbard/dp/B00005UOKP
+title: Open Sesame
+label: Blue Note, 1960
+
+69. Jimmy Smith
+link: http://www.amazon.com/Back-Chicken-Shack-Jimmy-Smith/dp/B000UO8BDE
+title: Back at the Chicken Shack
+label: Blue Note, 2007
+recorded: in 1960
+
+70. Dinah Washington
+link: http://www.amazon.com/First-Issue-Washington-Original-Recordings/dp/B0000046NK
+title: First Issue: The Dinah Washington Story
+label: Polygram, 1993
+recorded: 1943-61
+
+71. John Coltrane
+link: http://www.amazon.com/My-Favorite-Things-John-Coltrane/dp/B000002I53
+title: My Favorite Things
+label: Atlantic, 1960
+
+72. John Coltrane
+link: http://www.amazon.com/Complete-1961-Village-Vanguard-Recordings/dp/B000003NA3
+title: The Complete 1961 Village Vanguard Recordings
+label: GRP, 1997
+recorded: 1961
+
+73. John Coltrane
+link: http://www.amazon.com/Love-Supreme-John-Coltrane/dp/B0000A118M
+title: A Love Supreme
+label: Impulse!, 1964
+
+74. John Coltrane
+link: http://www.amazon.com/Ascension-John-Coltrane/dp/B00004TA40
+title: Ascension
+label: Impulse!, 1965
+
+75. Eric Dolphy
+link: http://www.amazon.com/Out-There-Eric-Dolphy/dp/B000EMGIH8
+title: Out There
+label: New Jazz, 1960
+
+76. Eric Dolphy
+link: http://www.amazon.com/Out-Lunch-Eric-Dolphy/dp/B00000I8UK
+title: Out to Lunch!
+label: Blue Note, 1964
+
+77. Bill Evans
+link: http://www.amazon.com/Complete-Village-Vanguard-Recordings-1961/dp/B000AMJEKA
+title: The Complete Village Vanguard Recordings, 1961
+label: Riverside, 2005
+
+78. Jackie McLean
+link: http://www.amazon.com/Fickle-Sonance-Jackie-McLean/dp/B00004X0QM
+title: A Fickle Sonance
+label: Blue Note, 1961
+
+79. Stan Getz and Jo&#227;o Gilberto
+link: http://www.amazon.com/Getz-Gilberto-Stan/dp/B0000047CX
+title: Getz/Gilberto
+label: Verve, 1963
+
+80. Dexter Gordon
+link: http://www.amazon.com/Our-Man-Paris-Dexter-Gordon/dp/B0000AC8N4
+title: Our Man in Paris
+label: Blue Note, 1963
+
+81. Andrew Hill
+link: http://www.amazon.com/Smoke-Stack-Andrew-Hill/dp/B000E1IGB0
+title: Smokestack
+label: Blue Note, 1963
+
+82. Lee Morgan
+link: http://www.amazon.com/Sidewinder-Lee-Morgan/dp/B00000IL26
+title: The Sidewinder
+label: Blue Note, 1963
+
+83. Albert Ayler
+link: http://www.amazon.com/Spiritual-Unity-Albert-Ayler/dp/B0007Z9RAC
+title: Spiritual Unity
+label: ESP, 1964
+
+84. Archie Shepp
+link: http://www.amazon.com/Four-Trane-Archie-Shepp/dp/B000003N9E
+title: Four for Trane
+label: Impulse!, 1964
+
+85. Horace Silver
+link: http://www.amazon.com/Song-My-Father-Horace-Silver/dp/B00000IL27
+title: Song for My Father
+label: Blue Note, 1964
+
+86. Wes Montgomery
+link: http://www.amazon.com/Smokin-Half-Note-Wes-Montgomery/dp/B0006VXF4G
+title: Smokin&#8217; at the Half Note
+label: Verve, 2005
+recorded: 1965
+
+87. Cecil Taylor
+link: http://www.amazon.com/Conquistador-Cecil-Taylor/dp/B0001CLZPG
+title: Conquistador!
+label: Blue Note, 1966
+
+88. Betty Carter
+link: http://www.amazon.com/Betty-Carters-Finest-Hour-Carter/dp/B00008RV03
+title: Betty Carter&#8217;s Finest Hour
+label: Verve, 2003
+recorded: 1958-92
+
+89. Frank Sinatra
+link: http://www.amazon.com/Sinatra-Sands-Frank-Count-Orchestra/dp/B000006OBQ
+title: Sinatra at the Sands with Count Basie &#38;amp; the Orchestra
+label: Reprise, 1966
+
+90. Frank Sinatra
+link: http://www.amazon.com/Capitol-Years-Frank-Sinatra/dp/B000002UWM/
+title: The Capitol Years
+label: Capitol, 1990
+recorded: 1953-62
+
+91. Nina Simone
+link: http://www.amazon.com/Very-Best-Nina-Simone-1967-1972/dp/B000009HRC
+title: Sugar in My Bowl: The Very Best of Nina Simone, 1967-1972
+label: RCA, 1998
+
+92. Pharoah Sanders
+link: http://www.amazon.com/Karma-Pharoah-Sanders/dp/B000003N7C
+title: Karma
+label: Impulse!, 1969
+
+93. Chick Corea
+link: http://www.amazon.com/Return-Forever-Chick-Corea/dp/B0000262QW
+title: Return to Forever
+label: ECM, 1972
+
+94. Keith Jarrett
+link: http://www.amazon.com/Koln-Concert-Keith-Jarrett/dp/B0000262WI/
+title: The K&#246;ln Concert, 1975
+label: ECM, 1999
+
+95. World Saxophone Quartet
+link: http://www.amazon.com/Plays-Ellington-World-Saxophone-Quartet/dp/B000005IXZ
+title: World Saxophone Quartet Plays Duke Ellington
+label: Nonesuch, 1986
+
+96. Charlie Haden and Hank Jones
+link: http://www.amazon.com/Steal-Away-Charlie-Haden/dp/B0000046YU
+title: Steal Away
+label: Polygram, 1995
+
+97. Joshua Redman Quartet
+link: http://www.amazon.com/Spirit-Moment-Live-Village-Vanguard/dp/B000002MYR
+title: Spirit of the Moment: Live at the Village Vanguard
+label: Warner Bros., 1995
+
+98. Cassandra Wilson
+link: http://www.amazon.com/Traveling-Miles-Cassandra-Wilson/dp/B00000I8UE
+title: Traveling Miles
+label: Blue Note, 1999
+
+99. Wynton Marsalis Septet
+link: http://www.amazon.com/Live-Village-Vanguard-Wynton-Marsalis/dp/B00003A9NY
+title: Live at the Village Vanguard
+label: Sony, 1999
+
+100. The Bill Charlap Trio
+link: http://www.amazon.com/Live-Village-Vanguard-Bill-Charlap/dp/B000PC6FP2
+title: Live at the Village Vanguard
+label: Blue Note, 2007
