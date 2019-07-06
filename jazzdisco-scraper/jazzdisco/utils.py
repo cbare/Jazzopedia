@@ -254,3 +254,18 @@ def clean_personnel(line):
     else:
         return line
 
+
+def same(items):
+    """
+    Test whether a list (or iterable) of items is all the same.
+    """
+    items_iter = iter(items)
+    try:
+        first = next(items_iter)
+        for item in items_iter:
+            if item != first:
+                return False
+    except StopIteration as e:
+        pass
+    return True
+

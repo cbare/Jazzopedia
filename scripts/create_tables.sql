@@ -64,6 +64,38 @@ CREATE TABLE IF NOT EXISTS Person_Session(
   FOREIGN KEY(session_id) REFERENCES Session(id)
 );
 
+CREATE TABLE IF NOT EXISTS Album(
+  id                INTEGER PRIMARY KEY ASC,
+  artist            TEXT,
+  title             TEXT,
+  artist_in_title   BOOLEAN,
+  released          TEXT,
+  recorded          TEXT,
+  genre             TEXT,
+  length            TEXT,
+  label             TEXT,
+  notes             TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Album_Session(
+  album_id          INTEGER,
+  session_id        INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS Album_Catalog_Number(
+  album_id          INTEGER,
+  label             TEXT,
+  catalog_number    TEXT,
+  FOREIGN KEY(album_id) REFERENCES Album(id)
+);
+
+CREATE TABLE IF NOT EXISTS Album_Track(
+  album_id          INTEGER,
+  track_number      INTEGER,
+  track_id          INTEGER,
+  FOREIGN KEY(album_id) REFERENCES Album(id)
+);
+
 CREATE TABLE IF NOT EXISTS Data_Source(
   entity_id         INTEGER,
   entity_type       TEXT,

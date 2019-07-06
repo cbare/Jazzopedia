@@ -23,7 +23,7 @@ def dict_factory(cursor, row):
 
 @app.before_request
 def before_request():
-    ## for rough render time; see https://gist.github.com/lost-theory/4521102
+    ## for computing page render time; see https://gist.github.com/lost-theory/4521102
     g.request_start_time = time.time()
     g.request_time = lambda: "%.5fs" % (time.time() - g.request_start_time)
 
@@ -93,10 +93,8 @@ def sessions(slug):
                         order by s.jd_sort_key;"""
 
             ## retrieve sessions
-            sessions = []
             results = c.execute(query, [person['id']])
-            for result in results:
-                sessions.append(result)
+            sessions = list(results)
 
             for session in sessions:
                 results = c.execute('select * from Part p where p.session_id=? order by sort_order', [session['id']])
@@ -112,6 +110,56 @@ def sessions(slug):
                         part['tracks'].append(result)
 
             return render_template('sessions.html', person=person, sessions=sessions)
+        else:
+            return '"%s" not found'%slug
+
+@app.route("/<string:slug>/catalog/")
+def catalog(slug):
+    with sqlite3.connect(path) as conn:
+        c = conn.cursor()
+        c.row_factory = dict_factory
+
+        c.execute('SELECT * FROM Person WHERE slug=?', [slug])
+        person = c.fetchone()
+        if person:
+            query = """ select distinct a.*
+                        from Album a
+                        join Album_Session alsess on a.id=alsess.album_id
+                        join Session s on s.id=alsess.session_id
+                        join Part p on s.id=p.session_id
+                        join Person_Part pp on p.id=pp.part_id
+                        where pp.person_id=?
+                        order by a.released;"""
+            results = c.execute(query, [person['id']])
+            catalog = list(results)
+
+            for album in catalog:
+                query = """ select s.*, pp.person_id, pp.role
+                            from Album_Session alsess
+                            join Session s on s.id=alsess.session_id
+                            join Part p on s.id=p.session_id
+                            join Person_Part pp on p.id=pp.part_id
+                            where alsess.album_id=?;"""
+                results = c.execute(query, [album['id']])
+                album['sessions'] = list(results)
+
+                for session in album['sessions']:
+                    query = """ select p.*
+                                from Part p
+                                where p.session_id=?;"""
+                    results = c.execute(query, [session['id']])
+                    session['parts'] = list(results)
+
+                    for part in session['parts']:
+                        query = """ select t.*
+                                    from Track t
+                                    join Part p on p.id=t.part_id
+                                    where p.id=?
+                                    order by t.sort_order;"""
+                        results = c.execute(query, [part['id']])
+                        part['tracks'] = list(results)
+
+            return render_template('catalog.html', person=person, catalog=catalog)
         else:
             return '"%s" not found'%slug
 

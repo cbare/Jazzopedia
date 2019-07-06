@@ -143,7 +143,7 @@ class JazzDiscoSpider(scrapy.Spider):
                         if look_ahead is None or look_ahead.name in ['h3','h2']:
                             break
 
-                    yield Release(title=title, artist=artist, catalog_source=catalog_artist, catalog_slug=catalog_slug, catalog_number=catalog_number, year=year, notes=notes, parts=parts)
+                    yield Release(title=title, artist=artist, catalog_source=catalog_artist, catalog_slug=catalog_slug, catalog_number=catalog_number, source_url=response.url, year=year, notes=notes, parts=parts)
 
 
     def parse_sessions(self, response):
