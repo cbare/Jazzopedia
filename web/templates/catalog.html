@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ person['name'] }} Release Catalog</title>
+</head>
+
+<body>
+  <div class=page>
+  <h1>{{ person['name'] }} Release Catalog</h1>
+
+  {% for album in catalog %}
+    <h3>{% if album.artist %}{{ album.artist }} - {% endif %}{{album.title}}</h3>
+    <p>{{ (album['notes'] or '')|safe }}</p>
+
+    {% for session in album['sessions'] %}
+      <h4>(session) {{ session.group }}</h4>
+      <p>{{ session['place'] }}; {{ session['date'] }}</p>
+      {% for part in session['parts'] %}
+      <p>{{ part['personnel'] }}</p>
+      <table>
+      {% for track in part['tracks'] %}
+      <tr>
+        <td>{{ track['catalog_id'] or '' }}</td>
+        <td>{{ track['name'] }}</td>
+        <td>{{ track['issued'] or '' }}</td>
+      </tr>
+      {% endfor %}
+      </table>
+      {% endfor %}
+      <p>(session notes) {{ session['notes']|safe }}</p>
+    {% endfor %}
+
+  {% endfor %}
+
+  </div>
+  <div id="footer">
+    <p><a href="/">home</a> - Rendered in {{ g.request_time() }}</p>
+  </div>
+</body>
+</html>
